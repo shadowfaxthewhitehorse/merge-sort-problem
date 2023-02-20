@@ -45,6 +45,17 @@ func mergeSort(arr []int) []int {
     return merge(left, right)
 }
 
+
+// DEVNOTES
+//
+// The merge function takes two sorted slices (left and right) and returns a single sorted slice by repeatedly selecting the smallest 
+// element from the left and right slices.
+//
+// The mergeSort function recursively splits the input slice in half until the base case of a slice with one or zero elements is reached. It then merges 
+// the two halves using the merge function and returns the result.
+//
+// In the main function, we create an unsorted array, print it to the console, sort it using mergeSort, and then print the sorted array.
+//
 func main() {
     arr := []int{9, 7, 5, 11, 12, 2, 14, 3, 10, 6}
     fmt.Println("Unsorted array:", arr)
